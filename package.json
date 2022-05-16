@@ -1,0 +1,23 @@
+{
+  "name": "liblogin-client",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.13.1",
+    "axios": "^0.27.2",
+    "buffer": "^6.0.3",
+    "hashconnect": "^0.1.6",
+    "json-stringify-deterministic": "^1.0.6"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.0-dev.20220516"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist/"
+  ]
+}
