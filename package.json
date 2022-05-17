@@ -19,5 +19,17 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist/"
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/TikZSZ/liblogin-client"
+  },
+  "keywords": [
+    "liblogin",
+    "client",
+    "frontend",
+    "authentication",
+    "hedera",
+    "hashconnect"
+  ],
+  "description": "Client side package for liblogin and hashconnect"
 }

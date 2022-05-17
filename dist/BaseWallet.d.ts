@@ -3,6 +3,7 @@ import { HashConnect } from "hashconnect";
 import { LibLoginTypes } from "./LibLoginTypes.js";
 import type { HashConnectTypes, MessageTypes } from "hashconnect";
 import { EventEmitter } from "./EventEmitter.js";
+
 export declare abstract class BaseWallet extends EventEmitter<LibLoginTypes.LibLoginEvents> {
     private AppMetaData;
     private config;

@@ -6,17 +6,21 @@ export declare namespace LibLoginTypes {
         pairedWalletData?: HashConnectTypes.WalletMetadata;
         pairedAccounts: string[];
     }
-    type Network = "mainnet" | "testnet";
+
+    type Network = "mainnet" | "testnet" | string;
+
     enum Status {
         Connected = "connected",
         Error = "error",
         NoWallet = "wallet-not-found",
         Disconnected = "not-connected"
     }
+
     enum ConnectionState {
         Connected = "Connected",
         Disconnected = "Disconnected"
     }
+
     interface AuthResponse extends MessageTypes.AuthenticationResponse {
         userSignature?: string;
         signedPayload?: {
@@ -27,6 +31,7 @@ export declare namespace LibLoginTypes {
             };
         };
     }
+
     interface LibLoginEvents {
         pair: {
             accountIds: string[];
@@ -39,6 +44,7 @@ export declare namespace LibLoginTypes {
         connectionStateChange: LibLoginTypes.ConnectionState;
         statusChange: LibLoginTypes.Status;
     }
+    
     interface WalletMetadata extends HashConnectTypes.WalletMetadata {
     }
 }
